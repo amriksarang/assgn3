@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile | </title>
+</head>
+
+<body>
+
+    <!-- The user name retrieved from facebook will be appended
+        to NavBar Brand element -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link mr-0 mr-lg-5 text-center" href="index.html">About Me</a>
+                    <a class="nav-item nav-link ml-0 ml-lg-5 text-center" href="#">My Posts</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- This is the Error section and is displayed only in case
+        if Facebook does not return data correctly  -->
+    <section id="error">
+        <div class="container text-center">
+            <p></p>
+        </div>
+    </section>
+
+    <!-- Show a spinner while the facebook response is being received -->
+    <section id="loading-spinner">
+        <div class="container text-center">
+            <p>
+                <i class="fas fa-spinner  fa-spin"></i>
+            </p>
+        </div>
+    </section>
+
+    <!--  The Facebook cover image and profile pcture is shown here -->
+    <section id="hero">
+        <div class="container-fluid">
+            <div class="row bg-image py-2">
+                <div class="col d-flex align-items-center justify-content-center">
+                    <div class="profile-pic my-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Display the posts retrived from Facebook -->
+    <section id="posts">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Facebook Posts</h2>
+                </div>
+            </div>
+            <div class="row posts-content">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section, user name is appended here -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <p class="my-1 ">&copy; 2018 By </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

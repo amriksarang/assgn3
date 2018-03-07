@@ -1,0 +1,155 @@
+
+/* Set the Website font type and font color  */
+html,
+body{
+    background-color: #fff;
+    color: #182153;
+    font-family: 'Lato', sans-serif;            
+}
+
+/* Set The relative font for mobile devices */
+html{
+    font-size: 0.8rem;
+}
+
+.small-text{
+    font-size: 0.95rem;
+}
+
+/* Hide all sections initially */
+section{
+    padding: 2em 0;
+    display: none;
+}
+
+/* Display spinner while waiting for Facebook data */
+#loading-spinner{
+    display: block;
+    font-size: 3rem;
+}
+
+/* Hero background image properties are set here.
+    The actual URL will be set in javascript file*/
+#hero{
+    background-repeat : no-repeat;
+    background-position : center;
+    background-size : cover;
+}
+
+/* The profile picture properties are set here.
+    The URL will be set in javascript file */
+.profile-pic{
+    z-index : 100;
+    background-repeat : no-repeat;
+    background-position : center;
+    background-size : cover;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 7.5rem;
+}
+
+/* set background color for alternate sections */
+#education,
+#about-me,
+#artists{
+    background-color: rgb(197, 197, 197);
+    text-align: center;
+}
+
+/* Underline each Section Heading */
+h2::after{
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 20%;
+    background-color: grey;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+}
+
+/* Make the School type uppercase e.g. HIGH SCHOOL */
+.education-content div:nth-child(odd) p{
+    text-transform: uppercase;
+}
+
+/* Set image size for Artist Section */
+.artists img{
+    width: 50%;
+    height: auto;
+}
+
+/* Style the anchor links in artist and teams section */
+.artists a,
+#favourite-teams a{
+    text-decoration: none;
+    color: #182153;
+}
+
+.artists a:hover,
+#favourite-teams a:hover{
+    color: blue;
+}
+
+/* Style "uploaded photos" section */
+#uploaded-photos a{
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+/* Initially footer is in fixed position to show 
+    it at the bottom of screen. After Facebook
+    data is successfully recieved its position is
+    reset to static in javascript code */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: white
+}
+
+@media (min-width: 576px) {  
+
+    /* Set The relative font for small devices */
+    html{
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (min-width: 768px) {  
+
+    /* Set The relative font for medium devices */
+    html{
+        font-size: 0.9rem;
+    }
+
+    /* Provide some Y axis margin for school name */
+    .education-content div:nth-child(even) p::after{
+        margin: 1rem 0;
+    }
+
+    /* Reduce the artist image size on medium and larger devices */
+    .artists img{
+        width: 20%;
+        height: auto;       
+    }
+
+    /* Make the font of School Type in Education section and also
+        of the date in posts section slightly smaller  */
+    .small-text{
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (min-width: 1200px) {  
+
+    /* Further increase the website font size for large screens */
+    html{
+        font-size: 1rem;
+    }
+}
