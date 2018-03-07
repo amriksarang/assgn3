@@ -33,8 +33,8 @@ $(document).ready(function () {
       "languages",
       "link",
       "favorite_teams",
-      "photos.type(uploaded){picture,link}",
-      "posts",
+      "photos.type(uploaded).limit(20){picture,link}",
+      "posts.limit(20)",
       "music{picture.height(9999).width(9999),name}"
   ];
 

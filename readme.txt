@@ -26,6 +26,8 @@ Below information is retrieved from user profile.
 If any field information is not available, the corresponding
 section is hidden.
 
+Number of Photos and Posts have been limited to 20 only
+
     about
     picture.type(large)
     cover
@@ -39,8 +41,8 @@ section is hidden.
     languages
     link
     favorite_teams
-    photos.type(uploaded){picturelink}
-    posts
+    photos.type(uploaded).limit(20){picturelink}
+    posts.limit(20)
     music{picture.height(9999).width(9999)name}
 
 
